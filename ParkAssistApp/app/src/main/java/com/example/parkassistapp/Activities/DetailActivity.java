@@ -1,12 +1,14 @@
 package com.example.parkassistapp.Activities;
 
+import android.app.Fragment;
 import android.os.Bundle;
 
 import android.app.FragmentManager;
 
+
 import com.example.parkassistapp.Model.ParkingGarage;
 import com.example.parkassistapp.R;
-import com.example.parkassistapp.Fragments.FragmentDetail
+import com.example.parkassistapp.Fragments.FragmentDetail;
 
 public class DetailActivity extends BaseActivity {
 
@@ -25,12 +27,12 @@ public class DetailActivity extends BaseActivity {
 
     private void showGarageDetails()
     {
-        FragmentDetail fragmentDetail = (FragmentDetail) manager.findFragmentById(R.id.frag_container);
+        Fragment fragmentDetail = (Fragment) manager.findFragmentById(R.id.frag_container);
     }
 
     @Override
     public void update()
     {
-        //do nothing, SearchActivity will update Favourite onResume()
+        //do nothing, SearchActivity will update onResume()
     }
 }

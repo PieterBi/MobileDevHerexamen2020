@@ -1,14 +1,17 @@
 package com.example.parkassistapp.Activities;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -38,7 +41,7 @@ public class SearchActivity extends BaseActivity implements MyListener {
     private FragmentManager manager;
     private ParkingGarage selectedGarage;
     private Boolean wideMode;
-    private Button searchButton;
+    private Button searchButton, googleButton;
     private String mJSONURLString;
 
     @Override
@@ -55,6 +58,7 @@ public class SearchActivity extends BaseActivity implements MyListener {
             sendGarage(0);
 
         searchButton = (Button) findViewById(R.id.btn_search);
+        googleButton = (Button) findViewById(R.id.btn_goToMaps);
         mJSONURLString = "https://opendata.brussel.be/api/records/1.0/search/?dataset=public-parkings&q=";
 
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +88,22 @@ public class SearchActivity extends BaseActivity implements MyListener {
                                 try {
                                     // Loop through the array elements
                                     JSONArray responseArray = response.getJSONArray("Data");
+                                    JSONArray parkingGaragesArray = responseArray.getJSONArray(1);
+                                    for(int i=0;i<parkingGaragesArray.length();i++)
+                                    {
+                                        JSONObject garage = responseArray.getJSONObject(i);
+
+                                        JSONObject fields = garage.getJSONObject("fields");
+
+                                        String company = fields.getString("proprietaire_beheersmaatschappij");
+                                        String name = fields.getString("nom_naam");
+
+                                        JSONArray coordinatesArray = fields.getJSONArray("coordonnes_coordinaten");
+                                        String coordinatesX = coordinatesArray.getString(0);
+                                        String coordinatesY = coordinatesArray.getString(1);
+
+                                        ParkingGarage parkingGarage = new ParkingGarage(company, name, coordinatesX, coordinatesY);
+                                    }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -100,6 +120,20 @@ public class SearchActivity extends BaseActivity implements MyListener {
 
             }
         });
+        googleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView searchEditText = (TextView) findViewById(R.id.tv_coordinatesx);
+                String coordinatesX = searchEditText.getText().toString();
+                searchEditText = (TextView) findViewById(R.id.tv_coordinatesy);
+                String coordinatesY = searchEditText.getText().toString();
+
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=" + coordinatesX + ", " + coordinatesY);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+
+            }});
     }
 
     @Override

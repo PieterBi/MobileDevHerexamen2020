@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1">
+
+        <EditText
+            android:id="@+id/et_inputSearch"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for parking garages"
+            android:inputType="textVisiblePassword"
+            android:layout_marginLeft="5dp" />
+
+        <ListView
+            android:id="@+id/lv_listOfGarages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/et_inputSearch" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search online"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@ public class CustomListAdapter extends ArrayAdapter implements Filterable {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.rowlayout, null, true);
 
-        TextView txtName = (TextView) rowView.findViewById(R.id.tv_garageName);
+        TextView txtName = (TextView) rowView.findViewById(R.id.tv_name);
 
         txtName.setText(filteredGarageArray[position].toString());
 

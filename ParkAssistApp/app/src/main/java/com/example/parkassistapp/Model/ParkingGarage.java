@@ -8,11 +8,11 @@ public class ParkingGarage implements Parcelable {
     private int id;
     private String company;
     private String name;
-    private double coordinateX;
-    private double coordinateY;
+    private String coordinateX;
+    private String coordinateY;
 
 
-    public ParkingGarage(String company, String name, double coordinateX, double coordinateY)
+    public ParkingGarage(String company, String name, String coordinateX, String coordinateY)
     {
         this.company = company;
         this.name = name;
@@ -20,7 +20,7 @@ public class ParkingGarage implements Parcelable {
         this.coordinateY = coordinateY;
     }
 
-    public ParkingGarage(int id, String company, String name, double coordinateX, double coordinateY)
+    public ParkingGarage(int id, String company, String name, String coordinateX, String coordinateY)
     {
         this(company, name, coordinateX, coordinateY);
         this.id = id;
@@ -51,19 +51,19 @@ public class ParkingGarage implements Parcelable {
         this.name = name;
     }
 
-    public double getCoordinateX() {
+    public String getCoordinateX() {
         return coordinateX;
     }
 
-    public void setCoordinateX(double coordinateX) {
+    public void setCoordinateX(String coordinateX) {
         this.coordinateX = coordinateX;
     }
 
-    public double getCoordinateY() {
+    public String getCoordinateY() {
         return coordinateY;
     }
 
-    public void setCoordinateY(double coordinateY) {
+    public void setCoordinateY(String coordinateY) {
         this.coordinateY = coordinateY;
     }
 
@@ -71,8 +71,8 @@ public class ParkingGarage implements Parcelable {
         id = in.readInt();
         company = in.readString();
         name = in.readString();
-        coordinateX = in.readDouble();
-        coordinateY = in.readDouble();
+        coordinateX = in.readString();
+        coordinateY = in.readString();
     }
 
     @Override
@@ -90,8 +90,8 @@ public class ParkingGarage implements Parcelable {
         dest.writeInt(id);
         dest.writeString(company);
         dest.writeString(name);
-        dest.writeDouble(coordinateX);
-        dest.writeDouble(coordinateY);
+        dest.writeString(coordinateX);
+        dest.writeString(coordinateY);
     }
 
     public static final Parcelable.Creator<ParkingGarage> CREATOR = new Parcelable.Creator<ParkingGarage>() {

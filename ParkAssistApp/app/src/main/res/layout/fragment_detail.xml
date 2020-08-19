@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/im_googleMaps"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_columnWeight="0.8"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/googlemapsimg"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_goToMaps"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/parking.detail.showMap"
+            android:layout_marginLeft="75dp"/>
+
+
+
+        <GridLayout
+            android:id="@+id/gl_garageDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="2">
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parking.detail.company"
+                    android:layout_marginTop="10dp"/>/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_company"
+                    android:text="@string/parking.detail.name"
+                    android:textStyle="bold" />
+                    android:layout_marginTop="10dp"
+
+                <TextView
+                    android:id="@+id/tv_coordinatesx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:text="@string/parking.detail.coordinatesx"/>
+
+                <TextView
+                    android:id="@+id/tv_coordinatesy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_coordinatesx"
+                    android:text="@string/parking.detail.coordinatesy"/>
+            </RelativeLayout>
+
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btn_savegarage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/parking.detail.parkingHere"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

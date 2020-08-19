@@ -34,7 +34,7 @@ public class FragmentList extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_favourite, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
 
         context = getActivity().getApplicationContext();
 
@@ -70,7 +70,7 @@ public class FragmentList extends Fragment {
 
     private void sendPosition(int position) {
         MyListener myListener = (MyListener) getActivity();
-        myListener.sendParkingGarage(position);
+        myListener.sendGarage(position);
     }
 
     private void searchParkingGarages(String s){ adapter.getFilter().filter(s); }

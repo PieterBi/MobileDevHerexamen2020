@@ -6,7 +6,30 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="930d1b12-b13b-4626-8f52-c4196ac41bba" name="Default Changelist" comment="" />
+    <list default="true" id="930d1b12-b13b-4626-8f52-c4196ac41bba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/googlemapsimg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/parkingicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_search_landscape.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Activities/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Activities/DetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Activities/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Activities/SearchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/CustomListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/CustomListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/DAL/ParkingGarageDbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/DAL/ParkingGarageDbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/FirstFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Fragments/FragmentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Fragments/FragmentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Model/ParkingGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/Model/ParkingGarage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parkassistapp/SecondFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/rowlayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/rowlayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +60,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1g9osOkICZgCjRWYVUWHAjScRgO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,8 +72,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mobile/Project/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SchoolHerexamen\MobileDevHerexamen2020\ParkAssistApp\app\src\main\res\drawable" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SchoolHerexamen\MobileDevHerexamen2020\ParkAssistApp\app\src\main\res\drawable" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -130,22 +166,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597538093383" />
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597612983848">
+    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597771837570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597612983848" />
+    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597771837570" />
     <state x="985" y="412" key="AndroidCreateResourceDirectoryDialog" timestamp="1597537292684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="985" y="412" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597537292684" />
-    <state x="996" y="516" width="840" height="484" key="AndroidCreateResourceFileDialog" timestamp="1597613080194">
+    <state x="902" y="354" width="840" height="484" key="AndroidCreateResourceFileDialog" timestamp="1597774396392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="996" y="516" width="840" height="484" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597613080194" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597611715805">
+    <state x="902" y="354" width="840" height="484" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597774396392" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597818576124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597611715805" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597818576124" />
     <state x="922" y="162" key="SettingsEditor" timestamp="1597595776958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,9 +190,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="412" y="150" width="1200" height="800" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597589183633" />
-    <state x="1136" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1597611698526">
+    <state x="1136" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1597771378577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1136" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597611698526" />
+    <state x="1136" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597771378577" />
   </component>
 </project>
